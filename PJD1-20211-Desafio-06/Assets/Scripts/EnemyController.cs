@@ -14,7 +14,6 @@ public class EnemyController : Rigidbody2DBase, IPoolableObject
     public bool ApplyDamage(int damage)
     {
         Hp -= damage;
-        if(Hp<=0)
             Destroy(gameObject);
         return Hp <= 0;
     }
